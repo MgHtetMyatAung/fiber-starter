@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$primary: #5837D0;
+$secondary: #b4b3b2b6;
+$info: #eee;
+$warning: orange;
+
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+*{
+    font-size: 18px;
+}
+.form-input,.form-btn{
+    padding: 12px;
+}
+.pw-group{
+    position: relative;
+}
+.eye{
+    position: absolute;
+    right: 20px;
+    top: 51%;
+}
+.eye,.sign-in{
+    cursor: pointer;
+}
+
+.circle{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+
+// for login view 
+
+.login-btn{
+    padding: 10px 20px;
+}
+
+// for mid section 
+.mid-img-box{
+    min-height: 55vh;
+}
+
+.mid-row{
+    min-height: 55vh;
+}
+
+.text-box{
+    margin: 5% 10%;
+}
+.img-box{
+    margin-right: 10%;
+    min-height: 55vh;
+    position: relative;
+}
+.img-box img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+// for footer section 
+.footer{
+    min-height: 30vh;
+}
+
+
+@include media-breakpoint-down(md) { 
+    *{
+        font-size: 17px;
+    }
+    .sign-title{
+        font-size: 2rem;
+    }
+
+    .img-box{
+        margin: 0 10%;
+        min-height: 30vh;
+    }
+
+    .text-box h2{
+        font-size: 2rem;
+    }
+
+    .text-box button{
+        display: block;
+        width: 100%;
+    }
+ }

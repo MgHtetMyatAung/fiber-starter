@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiber Starter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- for facebook  -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Fiber Starter">
+    <meta property="og:description" content="Challenge san kyi tar">
+    <meta property="og:image" content="./Assets/hero-Illustration.png">
+</head>
+<body>
+
+    <!-- for sign up page  -->
+    <div class="sign-up" id="sign-up">
+        <div class="container-fluid vh-100 bg-info">
+            <div class="row vh-100">
+                <div class="col-lg-6 p-0">
+                    <div class="vh-100 bg-white">
+                        <div class="mx-md-5 py-3 py-md-0 min-vh-100 px-4 px-lg-5 d-flex flex-column justify-content-center">
+                            <h5>Fiber</h5>
+                            <h2 class="my-4 fw-bold sign-title">Create your Fiber account</h2>
+                            <form action="" id="createAcc">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label fw-bold">Your Name</label>
+                                    <input type="text" class="form-control form-input" id="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold">E-mail</label>
+                                    <input type="email" class="form-control form-input" id="email" placeholder="john@example.com" required>
+                                </div>
+                                <div class="pw-group">
+                                    <label for="pw" class="form-label fw-bold">Password</label>
+                                    <input type="password" class="form-control form-input" id="pw" placeholder="At least 8 characters" required>
+                                    <i class="bi bi-eye-fill fs-5 text-black-50 eye" id="eye"></i>
+                                </div>
+                                <div class="d-flex my-3"> 
+                                    <div>
+                                        <input type="checkbox" name="" id="" class="form-check-input mt-0" required>
+                                    </div>
+                                    <div class="ms-2">
+                                        <p class="mb-0 small">By creating an account on Fiber you agree to the
+                                            <a href="" class="small fw-bold">Terms & conditions</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary d-block w-100 form-btn">Create Fiber account</button>
+                                <p class="text-center mt-2">Already have an account? <span class="text-primary sign-in">Sign in</span></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0 d-none d-lg-block">
+                    <div class="vh-100 bg-primary d-flex flex-column align-items-center justify-content-center">
+                        <div class="w-75">
+                            <img src="./Assets/Sign Up Image.png" alt="sing-up-img" class="w-100">
+                            <div class="w-100 px-5">
+                                <h2 class="text-center text-white mt-3">Unparalleled Templates</h2>
+                                <p class="text-center text-white-50 mb-0">
+                                    Crafted by a team of professional designers, our templates are unparalleled in the market.
+                                </p>
+                            </div>
+                            <div class="d-flex justify-content-center gap-2 mt-2">
+                                <p class="circle bg-white"></p>
+                                <p class="circle bg-secondary"></p>
+                                <p class="circle bg-secondary"></p>
+                                <p class="circle bg-secondary"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sign up page end -->
+
+    <!-- for login view  -->
+    <div class="d-none" id="login">
+        <!-- nav bar  -->
+        <nav class="navbar navbar-expand-lg bg-info fixed-top py-2 shadow-sm">
+            <div class="container">
+              <a class="navbar-brand fw-bold" href="#">Fiber</a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./Assets/Hamburger Menu.svg" alt="">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Community</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black" href="#">Features</a>
+                  </li>
+                </ul>
+                <form class="d-flex mb-3 mb-lg-0" role="search">
+                  <button class="btn login-btn rounded-1 fw-semibold">Sign In</button>
+                  <button class="btn btn-sm btn-primary login-btn ms-3 rounded-1" id="login-signup">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <!-- hero section  -->
+        <div class="bg-info min-vh-100">
+            <div class="container py-5 py-lg-0">
+                <div class="row min-vh-100 align-items-center flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6">
+                        <div class="">
+                            <div class="mb-2 d-flex align-items-center gap-1 d-none d-lg-block">
+                                <img src="./Assets/star.svg" alt="star-img">
+                                <img src="./Assets/star.svg" alt="star-img">
+                                <img src="./Assets/star.svg" alt="star-img">
+                                <img src="./Assets/star.svg" alt="star-img">
+                                <img src="./Assets/star.svg" alt="star-img">
+                                <span class="ms-2">Rate 4.8/5 (243 reviews)</span>
+                            </div>
+                            <h1 class="fw-bold display-5 mt-4 mt-lg-0">Create your portfolio in minutes.</h1>
+                            <p class="text-black-50">
+                                With Fiber , you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.
+                            </p>
+                            <div class="">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <button class="btn btn-primary d-block w-100 login-btn rounded-1">Start Free Trial</button>
+                                    </div>
+                                    <div class="col-lg-6 text-center text-lg-start pt-3 pt-lg-0"> 
+                                        <a href="#" class=" fw-semibold ms-lg-3">View Examples</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="">
+                                            <img src="./Assets/Checkmark.svg" alt="checkmark-img">
+                                            <span class="ms-2 text-black-50">No Credit Card Required</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mt-2 mt-lg-0">
+                                            <img src="./Assets/Checkmark.svg" alt="checkmark-img" class="ms-lg-2">
+                                            <span class="ms-2 text-black-50">10 Free Templates</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="">
+                            <img src="./Assets/hero-Illustration.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- for mid section  -->
+        <div class="min-vh-100 py-5">
+            <div class="container pt-3 pt-lg-5">
+                <div class="col-lg-6">
+                    <span class="text-primary fw-semibold d-block mb-2">Why Fiber?</span>
+                    <h2 class="fw-bold mb-4">A good portfolio means good employability.</h2>
+                </div>
+                <div class="row py-4">
+                    <div class="col-lg-4">
+                        <div class="mt-3 mt-lg-0">
+                            <img src="./Assets/time.svg" alt="time-img">
+                            <p class="fw-semibold my-2">Build in minutes</p>
+                            <p class=" text-black-50">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga et ipsum non explicabo pariatur autem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mt-3 mt-lg-0">
+                            <img src="./Assets/code.svg" alt="code-img">
+                            <p class="fw-semibold my-2">Build in minutes</p>
+                            <p class=" text-black-50">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga et ipsum non explicabo pariatur autem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="mt-3 mt-lg-0">
+                            <img src="./Assets/allSizes.svg" alt="all-device-img">
+                            <p class="fw-semibold my-2">Build in minutes</p>
+                            <p class="text-black-50">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga et ipsum non explicabo pariatur autem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid-img-box text-bg-primary rounded-3 border-0 align-items-center position-relative overflow-hidden my-3">
+                    <div class="row align-items-center mid-row">
+                        <div class="col-lg-6">
+                                <div class="text-box h-100 mt-5 mt-lg-0">
+                                    <h2>Diversify your portfolio.</h2>
+                                    <p class=" text-secondary">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laborum consequuntur sapiente fuga, tempora animi!
+                                    </p>
+                                    <button class="btn btn-light text-primary fw-semibold py-2 px-3 rounded-1">Start Free Trial</button>
+                                </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="img-box h-100 mt-5 mt-lg-0">
+                                <img src="./Assets/Page Image.png" alt="page-img" class=" d-block mx-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-lg-5">
+                <!-- Swiper -->
+                <div class="swiper mySwiper mt-5 mt-lg-0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card p-4 shadow-sm border mb-1">
+                                <div class="d-flex align-items-start gap-2">
+                                    <img src="./Assets/User Avatar.svg" alt="">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="mb-0 text-primary small fw-semibold">Sarah Andrews</p>
+                                        <p class="small">$100k in revenue</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in neque optio dolore doloremque aliquid consequuntur nobis qui id distinctio.
+                                </p>
+                                <button class="btn btn-outline-secondary text-primary fw-semibold py-2">View Sarah's Portfolio</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card p-4 shadow-sm border mb-1">
+                                <div class="d-flex align-items-start gap-2">
+                                    <img src="./Assets/User Avatar 2.svg" alt="">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="mb-0 text-primary small fw-semibold">Mathew Higgins</p>
+                                        <p class="small">$20k in revenue</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in neque optio dolore doloremque aliquid consequuntur nobis qui id distinctio.
+                                </p>
+                                <button class="btn btn-outline-secondary text-primary fw-semibold py-2">View Mathew's Portfolio</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card p-4 shadow-sm border mb-1">
+                                <div class="d-flex align-items-start gap-2">
+                                    <img src="./Assets/User Avatar 32.svg" alt="">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="mb-0 text-primary small fw-semibold">Janice Dave</p>
+                                        <p class="small">$30k in revenue</p>
+                                    </div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in neque optio dolore doloremque aliquid consequuntur nobis qui id distinctio.
+                                </p>
+                                <button class="btn btn-outline-secondary text-primary fw-semibold py-2">View Janice's Portfolio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- for footer section  -->
+        <div class="footer bg-info">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="mb-4 mb-lg-0">
+                            <h6 class=" fw-semibold">Fiber</h6>
+                            <p class="mt-3 text-black-50">
+                                With Fiber , you can setup your own personal portfolio in minutes with dozens of premade, beautiful templates.
+                            </p>
+                            <p class="mb-0 text-black-50">Made with 🖤 in the Netherlands.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="mb-4 mb-lg-0">
+                            <ul class=" list-unstyled">
+                                <li>
+                                    <h6 class="fw-semibold">Sitemap</h6>
+                                </li>
+                                <li class="mt-3">
+                                    <p class=" mb-0 text-black-50">Homepage</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class=" mb-0 text-black-50">Pricing</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">Testimonials</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">Features</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="mb-4 mb-lg-0">
+                            <ul class=" list-unstyled">
+                                <li>
+                                    <h6 class="fw-semibold">Resources</h6>
+                                </li>
+                                <li class="mt-3">
+                                    <p class="mb-0 text-black-50">Support</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">Contact</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">FAQ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="mb-4 mb-lg-0">
+                            <ul class=" list-unstyled">
+                                <li>
+                                    <h6 class="fw-semibold">Company</h6>
+                                </li>
+                                <li class="mt-3">
+                                    <p class="mb-0 text-black-50">About</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">Customers</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">Blog</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="mb-4 mb-lg-0">
+                            <ul class=" list-unstyled">
+                                <li>
+                                    <h6 class="fw-semibold">Portfolios</h6>
+                                </li>
+                                <li class="mt-3">
+                                    <p class="mb-0 text-black-50">Sarah Andrews</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">Mathew Higgins</p>
+                                </li>
+                                <li class="mt-1">
+                                    <p class="mb-0 text-black-50">Janice Dave</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- login view end  -->
+
+
+    
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        grabCursor: true,
+        breakpoints:{
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+
+            900: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            }
+        }
+      });
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
